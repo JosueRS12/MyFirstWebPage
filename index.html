@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">  <!-- Lang se usa para definir el idioma del sitio wb, "es" hace referencia a español  -->
     <head>
+        <meta charset="UTF-8"/> <!-- meta=> caracteristicas especiales de la pag. charset=> caracteres, en este caso UTF-8 (contiene "ñ" y tildes) -->
         <title>Josue Rodriguez</title>
+        <link rel="icon" type="image/png" href="images/favicon.png"> <!--rel=> relacion. type=> tipo. href=> locacion o ubicación.-->
+        <link rel="stylesheet" href="estilos/estilos.css">
     </head>
     <body>
         <header>
-            <nav>
-                <ol>
-                    <li>
-                        <a>portafolio</a>
-                    </li>
-                    <li>
-                        <a>Experiencia</a>
-                    </li>
-                    <li>
-                        <a>trabajemos juntos</a>
-                    </li>
-                </ol>
-            </nav>
+            <div>
+                <figure> <!-- contiene las imagenes-->
+                    <img src="images/logo.png" alt="Logo de http://leonidasesteban.com"> <!--src=> source(fuente). alt=> texto que se muestra cuando la imagen no pueda cargar.-->
+                </figure>
+                <nav>
+                    <ol>
+                        <li>
+                            <a href="#portafolio">portafolio</a>
+                        </li>
+                        <li>
+                            <a href="#eventos">Experiencia</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">trabajemos juntos</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>    
         </header>
         <section>
             <h1>
                 Hola! Soy <strong>Josue Daniel</strong> Estudiante <br> De <strong>Ingeniería de sistemas </strong> <br> enfocado en <strong>backend.</strong>
             </h1>
-            <!-- <img> imagen de portada -->
+            <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
         </section>
-        <section>
+        <section id="portafolio">
             <h2>portafolio (Proyectos destacados)</h2>
             <article>
                 <h3>Platzi Video</h3>
@@ -36,21 +44,29 @@
                     de React y React Native. Desde crear un vusta-detalle, hasta patrones avanzados de navegacion, este proyecto
                     ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma.
                 </p>
+                <img src="images/platzi-video-react-native.png" width="500"alt="Proyecto curso react">
             </article>
         </section>
-        <section>
+        <section id="eventos">
             <h2>Más sobre mi experiencia</h2>
             <article>
                 <figure>
-                    <!-- <img> otra imagen -->
+                    <img src="images/platzi-conf.jpg" width="500" height="300"> 
                 </figure>
                 <h3>PlatziConf México 2018</h3>
                 <p> El evento más grande sobre gente que quiere aprender más de internet. 
                     En este evento les comparto como tener una vida de constatne aprendizaje</p>
-                <a>Ver plática</a>
+                <a href="https://www.youtube.com/watch?v=YJ0u-MpYpM4" target="_blank">Ver plática</a>
             </article>
         </section>
-        <section>seccion contacto</section>
+        <section id="contacto">
+            <form action="/suscripcion/">
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tu email" > <!--placeholder=> muestra el texto guia en el input-->
+                <button>Enviar</button>
+            </form>
+            
+        </section>
         <footer>footer</footer>
     </body>
 </html>
