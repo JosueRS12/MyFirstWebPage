@@ -4,3 +4,24 @@ declaraciones
 propiedades
 valores */
 
+body{
+    font-family: 'Source Sans Pro','Times New Roman';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 40px; /* tamaño de letra */
+    line-height: 1.5em; /* espacio entre lineas */
+    letter-spacing: -.2px; /*espacio entre letras */
+    text-transform: uppercase; /* se transforma a mayusculas */
+    text-decoration: underline; /* subrayado */
+}
