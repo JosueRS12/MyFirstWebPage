@@ -6,6 +6,7 @@ valores */
 
 body{
     font-family: 'Source Sans Pro','Times New Roman';
+    margin: 0;
 }
 
 h1,
@@ -24,10 +25,25 @@ h1{
     letter-spacing: -.2px; /*espacio entre letras */
     text-transform: uppercase; /* se transforma a mayusculas */
     color: white;
+    margin: 100px 150px 70px 30px
 }
 h1 strong {
     color: #026fff;
 }
+    /* box-sizing:border-box => esta propiedad hace que el height y el width no se alteren
+        así se modifique el padding o el border. */
+.portfolio{
+    background: #fafafa;
+}
+.project {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+}
+
 .project_details {
     width: 500px;
 }
@@ -47,6 +63,38 @@ h1 strong {
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+.menu{
+    height: inherit;
+}
+.header ol {
+    display: flex;
+    height: inherit;
+    
+}
+.header ol li {
+    height: inherit;
+  
+}
+
+.header a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+figure {
+    margin: 0;
 }
 
 .header a{
