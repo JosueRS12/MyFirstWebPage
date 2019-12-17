@@ -61,6 +61,7 @@ h1 strong {
 }
 
 .project {
+    box-shadow: 0px 0px 8px -2px;
     border: 1px solid gray;
     border-radius: 10px;
     /* margin: 10px; */
@@ -268,5 +269,10 @@ figure {
 }
 
 .hero_image {
-    object-fit: cover;
+    object-fit: scale-down;
+}
+
+.hero a {
+    text-decoration: none;
+    color: #026fff;
 }
